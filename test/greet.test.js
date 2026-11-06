@@ -9,3 +9,7 @@ test("greets by name", () => {
 test("greets world when no name is given", () => {
   assert.equal(greet(), "Hello, world!");
 });
+
+test("trims surrounding whitespace from the name", () => {
+  assert.equal(greet("  Factory  "), "Hello, Factory!");
+});
