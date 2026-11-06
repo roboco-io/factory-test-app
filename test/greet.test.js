@@ -5,3 +5,7 @@ import { greet } from "../src/greet.js";
 test("greets by name", () => {
   assert.equal(greet("Factory"), "Hello, Factory!");
 });
+
+test("greets world when no name is given", () => {
+  assert.equal(greet(), "Hello, world!");
+});
