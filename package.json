@@ -1,5 +1,6 @@
 {
   "name": "factory-test-app",
+  "description": "소프트웨어 팩토리 시험 대상",
   "private": true,
   "type": "module",
   "scripts": {
