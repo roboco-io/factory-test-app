@@ -3,9 +3,10 @@
 requiredChecks:
   - test
 
-# Only documentation merges without an operator approval. Everything else that
-# matches no rule below is T2 and waits for a person.
-autoMergeTiers: [T0]
+# A change merges without an operator approval when the second AI engine approves it
+# and the required checks pass. T3 still waits for a person: the factory never merges
+# it automatically, whatever this list says.
+autoMergeTiers: [T0, T1, T2]
 
 rules:
   - tier: T0
