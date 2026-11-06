@@ -1,0 +1,17 @@
+# Risk policy read by the software factory from the default branch only.
+# See docs/operations.md in roboco-io/the-software-factory-demo.
+requiredChecks:
+  - test
+
+# Only documentation merges without an operator approval. Everything else that
+# matches no rule below is T2 and waits for a person.
+autoMergeTiers: [T0]
+
+rules:
+  - tier: T0
+    patterns:
+      - "docs/**"
+      - "*.md"
+  - tier: T3
+    patterns:
+      - "package.json"
