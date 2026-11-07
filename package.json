@@ -2,6 +2,7 @@
   "name": "factory-test-app",
   "private": true,
   "type": "module",
+  "keywords": ["factory", "demo"],
   "scripts": {
     "test": "node --test"
   }
