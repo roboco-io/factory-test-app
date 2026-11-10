@@ -19,3 +19,7 @@ assert.equal(greet(), "Hello, world!");
 ```sh
 npm test
 ```
+
+## 기여
+
+변경이 필요하면 이슈로 요청해 주세요.
